@@ -38,14 +38,14 @@
             <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
             <button
               type="button"
-              class="btn-close close"  <!-- Added "close" class -->
+              class="btn-close close"  <!-- Close class added -->
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
           <!-- Modal Body -->
           <div class="modal-body">
-            <form>
+            <form id="signupForm">  <!-- Added ID for form -->
               <!-- Email Input -->
               <div class="mb-3">
                 <label for="emailInput" class="form-label">Email address</label>
@@ -93,7 +93,7 @@
             >
               Close
             </button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" form="signupForm">Submit</button> <!-- Added form attribute -->
           </div>
         </div>
       </div>
