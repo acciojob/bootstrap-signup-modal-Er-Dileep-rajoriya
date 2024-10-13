@@ -38,14 +38,14 @@
             <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
             <button
               type="button"
-              class="btn-close close"  <!-- Ensure the close class is here -->
+              class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
           <!-- Modal Body -->
           <div class="modal-body">
-            <form id="signupForm">  <!-- Added ID for form -->
+            <form>
               <!-- Email Input -->
               <div class="mb-3">
                 <label for="emailInput" class="form-label">Email address</label>
@@ -88,12 +88,12 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary close-footer"
+              class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button type="submit" class="btn btn-primary" form="signupForm">Submit</button> <!-- Added form attribute -->
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
@@ -101,14 +101,5 @@
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JavaScript to check if modal is closing correctly -->
-    <script>
-      // Listen for the modal's hidden event to confirm it's closing
-      var myModalEl = document.getElementById('signupModal')
-      myModalEl.addEventListener('hidden.bs.modal', function () {
-        console.log('Modal is closed');
-      });
-    </script>
 </body>
 </html>
